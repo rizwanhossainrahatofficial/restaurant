@@ -15,9 +15,10 @@ function App() {
        <Header></Header>
      <Routes>
         <Route exact path="/" element={<Home />} />
+        <Route  path="/meal/:mealId" element={<MealDetail />} />
         <Route  path="/home" element={<Home />} />
-        <Route exact path="/meal/:mealId" element={<MealDetail />} />
-        <Route  path="*" element={<Error />} />
+        
+        <Route  exact path="/*" element={<Error />} />
       </Routes>
      </Router>
     </div>
